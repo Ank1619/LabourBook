@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/selectLocationFragment"
+        android:name="com.example.labourbook.Fragment.SelectLocationFragment"
+        android:label="fragment_select_location"
+        tools:layout="@layout/fragment_select_location">
+        <action
+            android:id="@+id/action_selectLocation_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/selectLocationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.labourbook.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_workerList"
+            app:destination="@id/workerListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_workerDetails"
+            app:destination="@id/workerDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryList"
+            app:destination="@id/categoryListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_selectLocation"
+            app:destination="@id/selectLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workerListFragment"
+        android:name="com.example.labourbook.Fragment.WorkerList"
+        android:label="fragment_worker_list"
+        tools:layout="@layout/fragment_worker_list">
+        <action
+            android:id="@+id/action_workerList_to_workerDetails"
+            app:destination="@id/workerDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workerDetailsFragment"
+        android:name="com.example.labourbook.Fragment.fragment_worker_details"
+        android:label="fragment_worker_details"
+        tools:layout="@layout/fragment_worker_details">
+        <action
+            android:id="@+id/action_workerDetails_to_confirmBooking"
+            app:destination="@id/confirmBookingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmBookingFragment"
+        android:name="com.example.labourbook.Fragment.fragment_booking"
+        android:label="fragment_booking2"
+        tools:layout="@layout/fragment_booking2">
+        <action
+            android:id="@+id/action_confirmBooking_to_bookingSuccess"
+            app:destination="@id/bookingSuccessFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_confirmBooking_to_mapLocationPicker"
+            app:destination="@id/mapLocationPickerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapLocationPickerFragment"
+        android:name="com.example.labourbook.Fragment.MapLocationPickerFragment"
+        android:label="fragment_map_location_picker"
+        tools:layout="@layout/fragment_map_location_picker" />
+
+    <fragment
+        android:id="@+id/bookingSuccessFragment"
+        android:name="com.example.labourbook.Fragment.fragment_booking_success"
+        android:label="fragment_booking_success"
+        tools:layout="@layout/fragment_booking_success">
+        <action
+            android:id="@+id/action_bookingSuccess_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_bookingSuccess_to_bookingFragment"
+            app:destination="@id/bookingFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.labourbook.Fragment.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking">
+        <action
+            android:id="@+id/action_bookingFragment_to_bookingDetails"
+            app:destination="@id/bookingDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingDetailsFragment"
+        android:name="com.example.labourbook.Fragment.BookingDetailsFragment"
+        android:label="fragment_booking_details"
+        tools:layout="@layout/fragment_booking_details" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.labourbook.Fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryListFragment"
+        android:name="com.example.labourbook.Fragment.CategoryListFragment"
+        android:label="fragment_category_list"
+        tools:layout="@layout/fragment_category_list">
+        <action
+            android:id="@+id/action_categoryList_to_workerList"
+            app:destination="@id/workerListFragment" />
+    </fragment>
+
+</navigation>

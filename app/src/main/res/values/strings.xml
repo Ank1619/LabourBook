@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LabourBook</string>
+    <string name="labour">Labour</string>
+    <string name="book">Book</string>
+    <string name="tagline">Find trusted workers near you</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_subtitle">Login to continue your account</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up_subtitle">Fill in your details to get started</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="log_in">Log In</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

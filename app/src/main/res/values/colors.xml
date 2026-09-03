@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_blue">#3B4CF7</color>
+    <color name="primary_blue_pressed">#2E3DE1</color>
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6C737F</color>
+    <color name="border_color">#E4E7EC</color>
+    <color name="input_bg">#FFFFFF</color>
+    <color name="icon_tint">#6C737F</color>
+    <color name="bg_light">#FAFAFC</color>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "382391290801",
+    "project_id": "labourbook-81948",
+    "storage_bucket": "labourbook-81948.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382391290801:android:4cad4ef8826f8a4be50b90",
+        "android_client_info": {
+          "package_name": "com.example.labourbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPvfka490d3pht7f4lIPpKDlrZU7MeF1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
